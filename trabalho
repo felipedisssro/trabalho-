@@ -1,0 +1,41 @@
+python
+
+numero = float (input ("digite um numero:"))
+
+if numero % 2 == 0:
+    print (f"o numero escolido é par")
+
+else:
+    print (f"o numero escolido é impar")
+
+if numero > 0:
+    print (f"e positivo")
+if numero < 0:
+    print (f"e negativo")
+
+C
+
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "Portuguese");
+    float numero;
+    
+    printf("Digite um número: ");
+    scanf("%f", &numero);
+
+    if ((int)numero % 2 == 0) {
+        printf("O número escolhido é par: %.2f\n", numero);
+    } else {
+        printf("O número escolhido é ímpar: %.2f\n", numero); // nessa parte dei uma roubada, não entendi %2f\n
+    }
+
+    
+    if (numero > 0) {
+        printf("O número é positivo.\n");
+    } else { // Se não for positivo, só pode ser negativo
+        printf("O número é negativo.\n");
+    }  
+}
+
